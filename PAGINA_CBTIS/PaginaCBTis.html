@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="Recursos/logoCBTis.svg">
+	<link rel="stylesheet" type="text/css" href="EstilosCBTIS.css">
+	<title>Pagina CBTis</title>
+	<script>
+        function calculateCoords(originalCoords, img) {
+            const widthScale = img.width / img.naturalWidth;
+            const heightScale = img.height / img.naturalHeight;
+            return originalCoords.map((coord, index) => {
+                return coord * (index % 2 === 0 ? widthScale : heightScale);
+            });
+        }
+
+        function setCoords() {
+            const img = document.getElementById('CroquisCBTis');
+            const areas = document.getElementsByTagName('area');
+
+            const originalCoords = [
+                [97, 2277, 2831, 2438],   // Canchas
+                [112, 1885, 699, 2269],   // Cooperativa
+                [2968, 745, 3313, 1114],  // Entrada
+                [2014, 1657, 2844, 2190], // Estacionamiento
+                [939, 150, 1509, 416],    // Bancas
+                [843, 1802, 1536, 2194],  // Intendencia
+                [2379, 770, 2922, 993],   // Logo
+                [2360, 410, 2951, 741],   // Oficinas
+                [1536, 36, 2290, 218],    // Programacion
+                [76, 120, 898, 632],      // Extras
+                [1044, 603, 1989, 1004],  // RecursosConta
+                [18, 747, 960, 1353],     // Meca
+                [2012, 1047, 2734, 1433], // Lab
+                [97, 1358, 1614, 1750],   // Laboratorios
+                [939, 435, 1547, 596],    // Gimnacio
+                [1053, 1096, 1705, 1333], // ContabilidadBaño
+                [1524, 238, 2106, 413],   // PlantaBaja
+                [2115, 238, 2501, 396],   // Orientacion
+                [2524, 172, 2942, 401],   // Computo
+                [2021, 466, 2331, 978],   // Pasillo1
+                [1974, 1053, 1723, 2217], // Pasillo2
+                [141, 1759, 671, 1869],   // Mesitas
+                [2009, 1451, 2811, 1636]  // Bancas2
+            ];
+
+            for (let i = 0; i < areas.length; i++) {
+                const coords = calculateCoords(originalCoords[i], img);
+                areas[i].coords = coords.join(',');
+            }
+        }
+
+        window.onload = setCoords;
+        window.onresize = setCoords;
+    </script>
+</head>
+
+<body>
+
+<div class="navbar">
+	<div class="logo">
+		<img src="Recursos/logoCBTis.svg" height="50px">
+	</div>
+
+	<div class="botones">
+		<a href="#Inicio">inicio</a>
+		<a href="#caracteristicas">caracteristicas</a>
+		<a href="#plan">plan de estudios</a>
+		<a href="#especialidades">especialidades</a>
+		<a href="#departamentos">departamentos</a>
+		<a href="#clubes">Clubes</a>
+		<a href="#instalaciones">instalaciones</a>
+		<a href="#direccion">direccion</a>
+	</div>
+</div>
+
+<div class="header" id="Inicio">
+	
+</div>
+
+<br>
+
+<div class="contenedor" >
+	<h1 class="titulo">Centro de Bachillerato Tecnologico Industrial y de Servicios #137</h1>
+	<p>
+		La preparatoria CBTis 137 (Centro de Bachillerato Tecnológico Industrial y de Servicios No. 137) es una institución de educación media superior ubicada en Nuevo Laredo, Tamaulipas, México. Este tipo de escuelas pertenecen a la Dirección General de Educación Tecnológica Industrial (DGETI) y ofrecen una educación técnica y tecnológica, combinada con el bachillerato general.
+	</p>
+	<p>
+		Tiene una reputación positiva en la región, siendo conocido por su calidad educativa y por preparar bien a los estudiantes tanto para continuar con estudios superiores como para integrarse al ámbito laboral.
+	</p>
+	<p>
+		El CBTis 137 fue fundado el 16 de octubre de 1978 en el municipio de Nuevo Laredo Tamaulipas. Esta fecha marca el inicio oficial de sus actividades academicas y administrativas.
+	</p>
+	<p>Esta dirigido los jóvenes egresados de secundaria que deseen seguir estudiando, como a quienes requieren cursar una carrera técnica para incorporarse al mercado laboral.</p>
+	<p>La DGETI coordina Centros Educativos a Nivel Nacional: <br>
+	288 Centros de Bachillerato Tecnológico Industrial y de Servicios (CBTis) <br>
+	168 Centros de Estudios Tecnológicos Industrial y de Servicios (CETis) <br>
+	812 Colegios de Estudios Científicos y Tecnológicos (CECyTES), que operan bajo un sistema descentralizado.</p>
+	<br>
+	<h3 class="subtitulo">historia:</h3>
+	<p>Nuestra casa de estudios entonces CBTIS 137 tuvo sus inicios en el año de 1980 en las instalaciones de la Escuela Secundaria Técnica No. 32 de esta pujante ciudad de Nuevo Laredo Tamaulipas, en donde un grupo de entusiastas maestros se daban a la tarea de iniciar este gran sueño concebido y hoy cristalizado en esta gran escuela, semilleros de muchas generaciones de bachilleres técnicos que hoy ocupan un sitio dentro de la fuerza productiva de nuestra ciudad y del país entero. Todos ellos visionarios y con un gran corazón, sin importar las carencias a las que tuvieron que enfrentarse, siempre dispuestos e impulsados por el ánimo de quien fuera el Director Fundador PROFR. VICENTE VALLES VALLES, quien desde su natal Durango, había venido a dar inicio a lo que hoy en día es esta prestigiosa casa de estudios CBTIS 137.</p>
+	<h3 class="subtitulo">personal fundador</h3>
+	<p>DIRECTOR: PROFR. VICENTE VALLES VALLES.</p>
+	<p>Personal docente:</p>
+	<ul>
+		<li>PROFRA. EVANGELINA LETICIA IBARRA SANTOS</li>
+		<li>PROFR. GUADALUPE FRANCISCO RODRIGUEZ MORENO</li>
+		<li>Q.F.B. NORMA GLORIA RODRIGUEZ MORENO</li>
+		<li>TEC. JOSE LUIS LEAL TREJO</li>
+		<li>PROFR. OSCAR DUARTE AMADOR</li>
+		<li>LIC. NORBERTO SILVA ROSAS</li>
+		<li>ING. RUBEN CALDERON RIOS</li>
+		<li>LIC. SAMUEL PEÑA GARCIA</li>
+		<li>PROFR. MIGUEL GUERRA TORRALVA</li>
+		<li>ARQ. JOSE LUIS GALINDO MARTINEZ</li>
+		<li>PROFRA. PATRICIA RAMIREZ VELAZQUEZ</li>
+		<li>LIC. DAVID MIRELES GARZA</li>
+	</ul>
+	<p>Personal administrativo:</p>
+	<ul>
+		<li>MA. DE LOS ANGELES LOYO TREVIÑO</li>
+		<li>YOLANDA MONSIBAIS OLVERA</li>
+		<li>NORMA GENOVEVA ORTIZ LUCIO</li>
+		<li>SERVICIOS GENERALES</li>
+		<li>C. JOSE LUIS RUIZ RAZO</li>
+		<li>C. JOSE GUADALUPE CONTRERAS VALENZUELA.</li>
+	</ul>
+	<br>
+	<h2 class="titulos" id="caracteristicas">Características</h2>
+	<p>Las materias propedéuticas que se cursan son prácticamente las mismas que en el bachillerato general,
+	por lo que se prepara para estudiar una carrera profesional del nivel superior.</p>
+	<p>El plan de estudios incluye módulos para la formación tecnológica que te preparan como técnico del nivel
+	medio superior en algunas de las carreras técnicas que se ofertan.</p>
+	<p>Al concluir cada módulo, los estudiantes reciben un certificado. Estos certificados se plantean como “salidas laterales”, que permiten que los estudiantes tengan reconocimiento
+	por sus estudios, aun cuando el estudiante no complete todo el plan de estudios del nivel medio superior.</p>
+	<br>
+	<ul>
+		<li>
+			Oferta Educativa: Proporciona una formación académica que permite a los estudiantes continuar con estudios superiores, además de una formación técnica que los prepara para integrarse al mercado laboral al terminar la preparatoria. Ofrecen diversas especialidades técnicas, como electrónica, programación, contabilidad, administración, entre otras.
+		</li>
+		<li>
+			Infraestructura: Las instalaciones suelen estar equipadas con laboratorios, talleres, bibliotecas y otras facilidades que apoyan la educación tecnológica.
+		</li>
+		<li>
+			Actividades Extracurriculares: Además de la educación académica y técnica, el CBTis 137 ofrece actividades deportivas, culturales y de desarrollo personal para complementar la formación de los estudiantes.
+		</li>
+		<li>
+			Vinculación con el Sector Productivo: La escuela busca vincular a los estudiantes con empresas y el sector productivo local, lo cual facilita las prácticas profesionales y la posible inserción laboral de los egresados.
+		</li>
+		<li>
+			Ubicación y Comunidad: Al estar en Nuevo Laredo, una ciudad fronteriza con una dinámica económica activa, los estudiantes tienen la ventaja de estar en un entorno con múltiples oportunidades de desarrollo profesional y laboral.
+		</li>
+	</ul>
+	<br>
+	<h3 class="subtitulo">VALORES, MISIÓN Y VISIÓN:</h3>
+	<p>El Centro de Bachillerato Tecnologico Industrial y de Servicios 137 ha brindado a la sociedad de Nuevo Laredo
+	jovenes emprendedores capaces de ganar a los retos que hoy en dia estan en el mundo con mas de 30 años de experiencia.</p>
+	<p>POLITICA DE CALIDAD: formar y desarrollar integralmente a los educandos del sistema de educacion tecnologica en
+	donde se manifieste el avance y desarrollo tecnologico la exoeriencia del personal docente tecnico administrativo y
+	directivo reforzando los valores que los motiven a la calidad y creatividad.</p>
+	<p>VALORES: HONESTIDAD, RESPONSABILIDAD,HONRADEZ,RESPETO, COMPROMISO, INTEGRIDAD,
+	LIDERAZGO,DICIPLINA,DIGNIDAD, IGUALDAD.</p>
+	<p>VISION: Ser una institución de educación media superior certificada, orientada al
+	aprendizaje y desarrollo de conocimientos tecnológicos y humanísticos.</p>
+	<p>MISION: Formar personas con conocimientos tecnológicos en las áreas industrial, comercial
+	y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir
+	al desarrollo sustentable del país.</p>
+
+	<h2 class="titulos" id="plan">plan de estudios</h2>
+	<p>Está organizado en seis semestres e integrados por asignaturas y módulos que están distribuidos en tres
+	componentes de formación: básica, propedéutica y profesional cubriendo un total de 2800 horas por semestre
+	en 16 semanas y un trabajo promedio de 30 horas de trabajo académico por semana.</p>
+	<p>El componente de formación básica con 1200 horas: se articula con la educación básica y con la de tipo superior
+	aborda los conocimientos esenciales de la ciencia, la tecnología y las humanidades, aporta fundamentos a la
+	formación propedéutica y a la profesional y está integrado por asignaturas.</p>
+	<p>Se distribuyen en cuatro campos de conocimiento, como son 1 Matemáticas, 2 Ciencias naturales, 3 Comunicación,
+	4 Humanidades, 5 Historia, sociedad y tecnología.</p>
+	<p>El componente de formación propedéutica con 480 horas: se articula con la educación superior, pone énfasis en
+	una profundización de los conocimientos disciplinares que favorezca una mejor incorporación de los egresados a
+	instituciones de ese tipo educativo y está integrado por asignaturas.</p>
+	<p>Se organiza en tres áreas que permiten la convergencia e integración de los saberes previamente adquiridos:
+	Físico –matemática; Químico – biológica y Económico – administrativa. (Sus seis asignaturas se ubican en el 5º y 6º
+	Semestres, tres de ellas son comunes para las tres áreas, dos más son específicas para cada área y la última es
+	elegida por el estudiante de acuerdo con la oferta del plantel.</p>
+	<p>El componente de formación profesional con 1200 horas: es la formación tecnológica se da a partir del segundo semestre,
+	te preparan como técnico del nivel medio superior, se organiza en carreras estructuradas en módulos para desarrollar
+	las competencias profesionales correspondientes al campo de formación profesional de la carrera técnica elegida.</p>
+	<br>
+	<p>AL CONCLUIR TUS ESTUDIOS OBTENDRAS: <br>
+	Obtienes el certificado de bachillerato y una carta de pasante; Una vez cubiertos los requisitos
+	correspondientes, el egresado obtiene el título y la cédula profesional de la carrera cursada, registrados
+	ante la Dirección General de Profesiones de la Secretaría de Educación Pública.</p>
+
+	<h2 class="titulos" id="especialidades">Especialidades</h2>
+	<p>
+		El CBTis 137 cuenta con múltiples carreras técnicas en su programa con las que los estudiantes de esta preparatoria se pueden especializar y preparar para el ámbito laboral en las respectivas áreas en las que se especialicen.<br>
+		A continuación se mostraran las diferentes especialidades disponibles en el plantel:
+	</p>
+	<div class="grid-conteiner">
+		<div></div>
+		<div class="personas">
+			<br>
+			<a href="Profesores.html" class="LinkPersona">Profesores</a>
+		</div>
+		<div></div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Administracion.jpg">
+			<a href="Administracion.html" class="LinkPersona">Administración de Recursos Humanos</a>
+		</div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Contabilidad.jpg">
+			<a href="Contabilidad.html" class="LinkPersona">Contabilidad</a>
+		</div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Laboratorista.JPG">
+			<a href="Laboratorista.html" class="LinkPersona">Laboratorista Clínico</a>
+		</div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Mecatronica.JPG">
+			<a href="Mecatronica.html" class="LinkPersona">Mecatrónica</a>
+		</div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Logistica.jpg">
+			<a href="Logistica.html" class="LinkPersona">Logística</a>
+		</div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Programacion.jpg">
+			<a href="Programacion.html" class="LinkPersona">Programación</a>
+		</div>
+		<div></div>
+		<div class="personas">
+			<img class="usuario" src="Recursos/Electricidad.jpg">
+			<a href="Electricidad.html" class="LinkPersona">Electricidad</a>
+		</div>
+	</div>
+
+	<br>
+
+	<h2 class="titulos" id="departamentos">departamentos</h2>
+
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Planeación Y Evaluación</h3>
+		<p>Encargado del Departamento en el Turno Matutino: Ing. Jose Vazquez Ruiz.</p>
+		<p>El departamento de Planeación y Evaluación se encarga de: Planear, dirigir, controlar y supervisar las actividades de desarrollo institucional, programación presupuestaria, mantenimiento y autoequipamiento y de evaluación e informática, de acuerdo con las disposiciones emitidas por la Dirección General de Educación Tecnológica Industrial. Presentar a la dirección del plantel el cuadro de necesidades de recursos humanos, financieros y materiales del departamento. Formular con la participación de la Subdirección Técnica, los planes y programas de desarrollo institucional a corto y mediano plazo, de acuerdo con las normas establecida por la Dirección General de Educación Tecnológica Industrial. Elaborar en coordinación con el Departamento de Servicios Docentes y administrativos la estructura educativa del plantel. Participar en el establecimiento de políticas y objetivos del plantel conforme a las disposiciones dictadas por la Dirección General de Educación Tecnológica Industrial.</p>
+	</div>
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Recursos Financieros</h3>
+		<p>Encargado del Departamento: Lic. Andrea Patricia Chapa Santos.</p>
+		<p>El Departemento de Recursos Financieros se encarga de: Aplicar las normas, lineamientos y políticas que emita la Secretaria y en particular la Dirección General de Educación Tecnológico Industrial para la administración de los recursos financieros del plantel. Formular el anteproyecto anual de presupuesto del plantel y presentarlo al Departamento de Servicios Administrativos para su validación. Registrar y controlar el ejercicio del presupuesto asignado al plantel, de acuerdo con las disposiciones emanadas de las autoridades competentes. Elaborar los estados financieros del presupuesto ejercido e informar de ello al Departamento de Servicios Administrativos para lo conducente. Llevar el registro de los ingresos propios del plantel y formular la documentación correspondiente a su ejercicio, de acuerdo con lo establecido en el procedimiento para la administración de los ingresos propios.</p>
+	</div>
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Servicios Administrativos</h3>
+		<p>Encargado del Departamento Turno Matutino: Lic. Stella Marys Hernández Herrera.</p>
+		<p>El Departamento de Servicios Administrativos se encarga de: Administrar los recursos humanos, materiales y financieros, así como la prestación de los servicios generales en el plantel, conforme a las normas y lineamientos establecidos por la Secretaria de Educación Pública. Difundir y vigilar la observancia de los lineamientos y políticas que emita la Secretaria y en particular la Dirección General de Educación Tecnológica Industrial para la administración de los recursos humanos, financieros y materiales, así como para la presentación de los servicios generales del plantel. Participar en la formulación del programa anual de operación y de la estructura educativa del plantel. Integrar el cuadro anual de necesidades del plantel y presentarlo a la dirección del mismo para lo conducente. Coordinar y supervisar las actividades de reclutamiento, selección, contratación y control del personal del plantel.</p>
+		<p>Horario de atención: 8:00 am a 2:00 pm</p>
+	</div>
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Servicios Docentes</h3>
+		<p>Encargado del Departamento Turno Matutino: Ing.Alejandro Crispín Nepomuceno.</p>
+		<p>Horario de atención: 8:00 am a 2:00 pm</p>
+		<p>Encargado del Departamento Turno Vespertino: Lic.José Arellano Hérnandez.</p>
+		<p>Horario de atención: 1:30pm a 8:00 pm</p>
+		<p>El Departamento de Servicios Docentes se encarga de: Organizar, dirigir y supervisar la aplicación de los planes y programas de estudio y métodos educativos en el Plantel; así como registrar y controlar los avances programáticos de las asignaturas del Tronco Común y de las carreras o especialidades. Integrar el cuadro de necesidades de Recursos Humanos, Financieros y materiales requeridos para el cumplimiento de las labores encomendadas al Departamento y presentarlo a la Subdirección Técnica para lo conducente. Elaborar los programas y horarios de trabajo del personal Docente y Técnico del Departamento y presentarlos a la Subdirección Técnica para su aprobación. Orientar al personal Docente en el uso de la técnicas de enseñanza y de los métodos educativos para el logro de los objetivos del proceso enseñanza - aprendizaje. Coordinar y supervisar la integración y funcionamiento de las academias de Maestros, de acuerdo con los planes y programas de estudio y horarios establecidos.</p>
+	</div>
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Servicios Escolares</h3>
+		<p>Encargado del Departamento Turno Matutino: Lic. Angeles González Gámez.</p>
+		<p>Horario de atención: 8:00 am a 2:00 pm.</p>
+		<p>Es el Departamento encargado de: Organizar, dirigir y supervisar las actividades de extensión educativa y de control escolar, de acuerdo con las normas y los lineamientos establecidos por la D.G.E.T.I; así como la difusión y supervisión del cumplimiento del reglamento, políticas y procedimientos emitidos para regular el funcionamiento del plantel. Programa, coordina y supervisa el desarrollo de actividades de promoción deportiva y difusión cultural que se realicen en el plantel. Programa, coordina y supervisa estudios orientados a identificar las causas que afecten el rendimiento y comportamiento escolar de los alumnos. Programa, coordina y supervisa la prestación del servicio social y titulación, de los alumnos del plantel. Coordinar y supervisar el otorgamiento de becas a los alumnos seleccionados, de acuerdo con las disposiciones vigentes.</p>
+	</div>
+	<div class="departamentos">
+		<h3 class="subtitulo">Departamento De Vinculación</h3>
+		<p>Encargado del Departamento: Lic. Luis Enrique Perales Amaya.</p>
+		<p>Es el Departamento encargado de: Organizar, coordinar y supervisar las actividades encaminadas a vincular la educación tecnológica con el sector productivo de bienes y servicios, de acuerdo con los lineamientos establecidos por la Dirección General de Educación Tecnológica Industrial. Formular el programa anual de vinculación y proponerlo a la Subdirección Técnica para lo conducente. Integrar el cuadro de necesidades de recursos humanos, financieros y materiales requeridos para el cumplimiento de las labores encomendadas al departamento y presentarlo a la Subdirección Técnica para lo conducente. Elaborar diagnósticos socioeconómicos del área de influencia del plantel y jerarquizar las necesidades de bienes y servicios para determinar su atención. Participar con la dirección del plantel en la celebración de convenios de vinculación del plantel con el sector productivo de bienes y servicios de la región y realizar su seguimiento.</p>
+		<p>Horario de Atención a alumnos: 9:00 a 9:30 am y de 1:30 a 2:30 pm</p>
+	</div>
+
+	<br>
+
+	<h2 class="titulos" id="clubes">clubes</h2>
+
+	<div class="grid-clubes">
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/munclub.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">munclub</h2>
+				<p>National High School Model United Nation, es un modelo encargado para todos aquellos paises que en las escuelas preparatorias quieran participar aportando mejoras, ideas y soluciones a diferentes tipos de problemas que se presentan alrededor del mundo, un grupo de jovenes seleccionados para participar. implementando asi en la sociedad en general la diferencia e implementando el idioma ingles.</p>
+				<p>En CBTis #137 también puedes ser parte de la ONU, donde debatirás a lado de tus compañeros cebetianos y demás personas para buscar una solución a los problemas de nuestro planeta. Podrás ser parte de este grupo de alumnos que visitaron la SEDE de la ONU en New York, USA para participar en el foro.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/DANZAimg.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">danza</h2>
+				<p>Impartido por: Oswaldo misael Carrizales Ibarra.</p>
+				<p>Horario: 6:30 a 8:30 martes y jueves.</p>
+				<p>Información acerca de las actividades:<br>
+				Practicar danzas folclóricas, difundir y mantener nuestras tradiciones mexicanas</p>
+				<p>Tiempo impartiendo en el club de danza: <br>
+				Lleva 6 meses impartiendo en el club</p>
+				<p>Frase motivacional: <br>
+				No te niegues a Conocer algo que no conoces y no límites tu mente a algo que no sabes y lo puedes hacer</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/taekwondo.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">taekwondo</h2>
+				<p>Impartido por: Ing. Kleyber Antonio Tovar Serrano.</p>
+				<p>Inaugurado en abril del 2022, nació como un club orientado a mujeres, sin embargo, actualmente cuenta con cupo para ambos géneros. Este deporte es reconocido como el arte marcial más popular y, al ser una disciplina, te ayuda a forjar el carácter, la determinación, la perseverancia y el respeto. Además de motivar la actividad física y una buena salud, también contamos con el apoyo para tener un medio de defensa personal en caso de emergencia. Al inscribirte a este club, estarás sujeto a ir a torneos, competencias y actividades.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/BANDA.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Banda de guerra</h2>
+				<p>En nuestro club, nos dedicamos a actividades que se relacionan únicamente con el gobierno y las competencias. Contamos con una variedad de instrumentos, entre los que se incluye el tambor, que es uno de los más destacados. Nos reunimos para ensayar en el Tec, dedicando entre 7 y 8 horas los sábados y domingos a perfeccionar nuestras habilidades y prepararnos para los eventos importantes.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/matematicas.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de Matematicas</h2>
+				<p>En nuestro club, nos dedicamos a actividades que se relacionan únicamente con el gobierno y las competencias. Contamos con una variedad de instrumentos, entre los que se incluye el tambor, que es uno de los más destacados. Nos reunimos para ensayar en el Tec, dedicando entre 7 y 8 horas los sábados y domingos a perfeccionar nuestras habilidades y prepararnos para los eventos importantes.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/futbol.jpeg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de Futbol</h2>
+				<p>Varonil y femenil de 7-9 en los campos de las casas amarillas con el maestro Gerardo Santos.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/bolei.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de Vóleybol</h2>
+				<p>Varonil y femenil de 2-4 martes y jueves en el gym Rafael Elizondo con la maestra Erika.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/basquet.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de basquetbol</h2>
+				<p>Basquetbol varonil lunes a viernes en el cotis 137 de 7 a 8:30 con los maestros diana Fernández y Fernando Rodríguez.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/atletismo.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de atletismo</h2>
+				<p>Atletismo con el maestro marques de lunes a viernes en la unidad deportiva de 6-8.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/oratoria.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de declamacion y oratoria</h2>
+				<p>Declamación y oratoria con el maestro David Ojeda buscarlo personalmente para ocupar horarios</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/beis.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">Club de beisbol</h2>
+				<p>Béisbol dirigirse con el maestro Martin García maestro de la tarde el les da información de béisbol.</p>
+			</div>
+		</div>
+		<div class="cards">
+			<div class="imagen-club">
+				<img src="Recursos/musical.jpg">
+			</div>
+			<div class="contenido-club">
+				<h2 class="titulos">grupos musicales y canto tradicional</h2>
+				<p>Grupos musicales y canto tradicional se hacen individuales ya en su momento se hace casting para elegir los representantes.</p>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="titulos" id="instalaciones">Instalaciones</h2>
+
+	<img src="Recursos/croquis.png" id="CroquisCBTis" usemap="#image-map">
+
+	<br><br>
+
+	<map name="image-map">
+        <area alt="Canchas" title="Canchas" href="#canchas" coords="97,2277,2831,2438" shape="rect">
+        <area alt="Cooperativa" title="Cafeteria" href="#cafeteria" coords="112,1885,699,2269" shape="rect">
+        <area alt="Entrada" title="Entrada" href="#entrada" coords="2968,745,3313,1114" shape="rect">
+        <area alt="Estacionamiento" title="Estacionamiento" href="#estacionamiento" coords="2014,1657,2844,2190" shape="rect">
+        <area alt="Bancas" title="Bancas" href="#bancas" coords="939,150,1509,416" shape="rect">
+        <area alt="Intendencia" title="Intendencia" href="" coords="843,1802,1536,2194" shape="rect">
+        <area alt="Logo" title="Logo" href="#logo" coords="2379,770,2922,993" shape="rect">
+        <area alt="Oficinas" title="Oficinas" href="#oficinas" coords="2360,410,2951,741" shape="rect">
+        <area alt="edificioD" title="Edificio D" href="#edificioD" coords="1536,36,2290,218" shape="rect">
+        <area alt="biblioteca" title="biblioteca" href="#biblioteca" coords="76,120,898,632" shape="rect">
+        <area alt="RecursosConta" title="Edificio C" href="#edificioC" coords="1044,603,1989,1004" shape="rect">
+        <area alt="edificioH" title="Edificio H" href="#edificioH" coords="18,747,960,1353" shape="rect">
+        <area alt="Lab" title="Edificio E" href="#edificioE" coords="2012,1047,2734,1433" shape="rect">
+        <area alt="Laboratorios" title="Laboratorios" href="#tallerMeca" coords="97,1358,1614,1750" shape="rect">
+        <area alt="Gimnacio" title="Gimnacio" href="#gym" coords="939,435,1547,596" shape="rect">
+        <area alt="ContabilidadBaño" title="edificio L" href="#edificioL" coords="1053,1096,1705,1333" shape="rect">
+        <area alt="PlantaBaja" title="PlantaBaja" href="#edificioD" coords="1524,238,2106,413" shape="rect">
+        <area alt="Orientacion" title="Orientacion" href="" coords="2115,238,2501,396" shape="rect">
+        <area alt="Computo" title="Computo" href="#computo2" coords="2524,172,2942,401" shape="rect">
+        <area alt="Pasillo1" title="Pasillo1" href="" coords="2021,466,2331,978" shape="rect">
+        <area alt="Pasillo2" title="Pasillo2" href="" coords="1974,1053,1723,2217" shape="rect">
+        <area alt="Mesitas" title="Mesitas" href="" coords="141,1759,671,1869" shape="rect">
+        <area alt="Bancas" title="Bancas" href="#bancas" coords="2009,1451,2811,1636" shape="rect">
+    </map>
+
+	<div class="grid-areas">
+		<div class="areas">
+			<br>
+			<span class="titulos" id="entrada">entrada</span><br><br>
+			<img src="Recursos/entrada.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="logo">logo CBtis 137</span><br><br>
+			<img src="Recursos/CBTIS.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="oficinas">oficinas</span><br><br>
+			<img src="Recursos/oficinas.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos">Máquinas expendedoras</span>
+			<img src="Recursos/maquinas.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificoE">edificio e</span><br><br>
+			<img src="Recursos/edificioE.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="bancas">bancas</span>
+			<img src="Recursos/bancas.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="bancas">Mesas de Ajedrez</span> <br><br>
+			<img src="Recursos/Mesas.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="gym">Gimnasio exterior</span><br><br>
+			<img src="Recursos/Gym2.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="biblioteca">biblioteca</span><br><br>
+			<img src="Recursos/biblioteca.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificioD">edificio d</span> <br><br>
+			<img src="Recursos/edificioD.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="computo2">Laboratorio de cómputo</span> <br><br>
+			<img src="Recursos/computo2.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificioC">edificio C</span><br><br>
+			<img src="Recursos/edificioC.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificioL">Edificio L</span><br><br>
+			<img src="Recursos/edificioL.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="tallerMeca">taller de mecatronica</span><br><br>
+			<img src="Recursos/tallerMeca.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="tallerElectricidad">taller de electricidad</span><br><br>
+			<img src="Recursos/tallerElectricidad.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificioH">edificio h</span><br><br>
+			<img src="Recursos/edificioH.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="edificioJ">edificio j</span><br><br>
+			<img src="Recursos/edificioJ.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="cafeteria">Cafetería</span><br><br>
+			<img src="Recursos/cafeteria.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="canchas">Canchas</span><br><br>
+			<img src="Recursos/canchas.jpg" class="foto-areas">
+		</div>
+		<div class="areas">
+			<br>
+			<span class="titulos" id="estacionamiento">estacionamiento</span><br><br>
+			<img src="Recursos/estacionamiento.jpg" class="foto-areas">
+		</div>
+	</div>
+
+	<br>	
+	
+</div>
+
+<br>
+
+<div class="footer">
+	<h2 id="direccion">mas informacion</h2>
+	<div class="grid-footer">
+		<div class="info-contacto">
+			<div class="columnas">
+				<h3>Direccion y contacto</h3>
+				<ul>
+					<li>Quinta Avenida 100, Guadalupe Borja de Díaz Ordáz, 88295 Nuevo Laredo, Tamps.</li>
+					<li>Teléfono: 867 717 0406</li>				
+				</ul>
+			</div>
+			<div class="columnas">
+				<h3>redes sociales</h3>
+				<ul>
+					<li><a href="https://cbtis137.edu.mx">Pagina Oficial</a></li>
+					<li><a href="https://www.facebook.com/Cbtis137Oficial/">Facebook</a></li>
+					<li><a href="https://x.com/CBTis137">Twitter</a></li>					
+				</ul>
+			</div>
+		</div>
+		<div class="mapa">
+			<h3>mapa</h3>
+			<img src="Recursos/MAPA.JPG" width="450" height="350">
+		</div>
+	</div>
+</div>
+</body>
+</html>

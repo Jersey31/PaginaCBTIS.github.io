@@ -1,0 +1,360 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body{
+	background-color: #f7f6f0; /*f5f3e6*/
+	text-align: center;
+	font-family: sans-serif;
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 35em;
+}
+p{
+	margin: 20px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+ul,ol{
+	margin-left: 20px;
+	text-align: justify;
+}
+li{
+	margin: 10px;
+}
+#CroquisCBTis{
+	width: 50%;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	background: url(Recursos/CBTIS.jpg) no-repeat center;
+	background-size: cover;
+}
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	width: 100%;
+}
+.titulo{
+	margin-bottom: 40px;
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #6b402e;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.titulos{
+	margin-bottom: 40px;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #6b402e;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.subtitulo{
+	margin: 20px;
+	margin-top: 0;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #6b402e;
+	text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	text-align: justify;
+}
+.contenedor{
+	background-color: #f5f3e6; /* f7f6f0 */
+	margin: 0 auto;
+	padding: 15px;
+	width: 70%;
+	border-radius: 10px;
+	text-align: center;
+}
+.grid-conteiner{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	width: 70%;
+	margin: 0 auto;
+	background-color: ;
+	padding: 20px;
+}
+.personas{
+	background-color: #edead8; /* #edead8 */
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	margin: 5px;
+	transition: 0.7s;
+	align-items: center;
+}
+.personas:hover{
+	transform: scale(1.15);
+	background-color: #faf9f5;
+}
+.usuario{
+	border-radius: 15px 15px 0 0;
+	width: 100%;
+}
+.LinkPersona{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 80%;
+	display: block;
+	text-decoration: none;
+	padding: 10px 10px;
+	font-size: 15px;
+	background: #8c2b04;
+	color: #f7f6f0;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+.LinkPersona:hover{
+	background: #b03404;
+	color: #faf2c5;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 65px;
+	background: #8c2b04;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.navbar a{
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #f7f6f0;
+	transition: 0.3s;
+}
+.navbar a:hover{
+	background: #b03404;
+	color: #faf2c5;
+}
+.botones{
+	display: flex;
+	margin-right: 10px;
+}
+.logo{
+	padding: 5px;
+	margin-left: 30px;
+	background-color: #b03404;
+	border-radius: 50%;
+}
+
+/* Profesores */
+
+.grid-profes{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-profes-general{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 1fr) ;
+	width: 90%;
+	margin: 15px auto;
+	gap: 10px;
+	background-color: #edead8;
+	border-radius: 15px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	padding: 15px;
+}
+.InfoProfes{
+	grid-column: 1/4;
+	padding: 15px;
+	margin: 10px;
+	text-align: justify;
+}
+.InfoProfes .titulos{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.MarcoProfes{
+	grid-column: 4;
+	background-color: #edead8;
+	border-radius: 15px;
+	padding: 10px;
+	margin: auto auto;
+	background-color: #f5f3e6;
+}
+.ProfesroesImg{
+	width: 100%;
+	border-radius: 15px;
+}
+.ProfesImg{
+	width: 100%;
+	border-radius: 15px;
+	margin: auto auto;
+}
+
+.departamentos{
+	width: 80%;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #edead8;
+}
+
+.grid-areas{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	width: 95%;
+	gap: 15px;
+	margin: 0 auto;
+}
+.areas{
+	background-color: green;
+	border-radius: 15px;
+	background-color: #edead8;
+	transition: 0.5s;
+}
+.areas:hover{
+	transform: scale(1.05);
+	background-color: #faf9f5;
+}
+.foto-areas{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border-radius: 15px;
+}
+
+
+
+/* footer */
+
+.footer{
+	width: 100%;
+	background-color: #8c2b04;
+	bottom: 0;
+	position: absolute;
+	padding: 1em 0;
+	color: #f7f6f0;
+}
+
+.grid-footer{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	gap: 20px;
+	padding: 0 50px;
+}
+
+.info-contacto{
+	grid-column: 1/3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	justify-content: center;
+}
+.columnas{
+	padding-top: 30px;
+}
+.mapa{
+	grid-column: 3;
+}
+
+.footer a{
+	color: #faf2c5;
+}
+
+.footer h2{
+	margin-bottom: 40px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #f7f6f0;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.footer h3{
+	text-align: justify;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #f7f6f0;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* clubes */
+
+.grid-clubes{
+	margin: 0 auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+.cards{
+	width: 100%;
+	aspect-ratio: 1 / 0.7;
+	border-radius: 8px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.4s;
+	margin: 30px auto;
+}
+.cards .imagen-club{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+.cards .imagen-club img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 90%;
+	border-radius: inherit;
+	transition: 0.5s ease-in-out;
+}
+.cards::after{
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 2px solid white;
+	border-radius: inherit;
+	opacity: 0;
+	transition: 0.4s ease-in-out;
+}
+.cards:hover img{
+	filter: grayscale(1) brightness(0.4);
+}
+.cards:hover::after{
+	opacity: 1;
+	inset: 20px;
+}
+.contenido-club{
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+.cards:hover .contenido-club{
+	opacity: 1;
+}
+.cards:hover{
+	transform: scale(1.1);
+}
+
+.cards .titulos{
+	color: #f7f6f0;
+}
+.cards p{
+	color: #f7f6f0;
+}
